@@ -1,4 +1,8 @@
-export default function Laps({ laps }) {
+interface LapsProps {
+  laps: number[];
+}
+
+export default function Laps({ laps }: LapsProps) {
   return (
     <div style={{ marginTop: "1rem" }}>
       {laps.length === 0 ? (
